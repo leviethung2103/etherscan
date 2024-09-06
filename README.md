@@ -85,3 +85,24 @@ mkdir mongo-data
 docker compose up -d
 ```
 
+### Techinical Detail
+
+The overall architecture of this project consists of three main components: the Frontend, the Python Backend, and the MongoDB Database.
+
+1. **Frontend**: The frontend is a web application built with modern NextJS frameworks. It communicates with the backend through RESTful APIs to fetch and display data. The frontend is responsible for the user interface and user experience.
+
+2. **Backend**: The backend is a Python-based server that handles the business logic and processes requests from the frontend. It interacts with the MongoDB database to store and retrieve data. The backend exposes RESTful APIs for the frontend to consume.
+
+3. **MongoDB Database**: MongoDB is a NoSQL database used to store the application's data. It is chosen for its flexibility and scalability. The database is managed using Docker to ensure a consistent and isolated environment.
+
+4. **Py Backend**: Machine learning modules and crawler modules
+
+The architecture ensures a clear separation of concerns, making the application modular, scalable, and easier to maintain.
+
+<img src="imgs/fig1_overall_achirecture.png" alt="Overall Architecture" width="80%">
+
+### Fraud Detection Solution
+<img src="imgs/fig2_detail_solution.png" alt="Detail Solution" width="80%">
+
+### Port Configuration
+<img src="imgs/fig3_port_conf.png" alt="Port Configuration" width="80%">
