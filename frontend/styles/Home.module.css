@@ -1,0 +1,371 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  /* background-color: white; */
+  color: white;
+  background-color: #161616;
+}
+
+.header {
+  width: 100%;
+  background-color: #111111;
+}
+
+.topHeader {
+  display: flex;
+  align-items: center;
+  color: #bbbbbb;
+  height: 3rem;
+  font-size: 0.85rem;
+  padding: 0 11.5rem;
+  border-bottom: 1px solid #222222;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.3rem;
+  padding: 0 11.5rem;
+  border-bottom: 1px solid #222222;
+}
+
+.logo {
+  width: 9rem;
+  height: auto;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #cccccc;
+  width: 44.7rem;
+  letter-spacing: 0.01rem;
+}
+
+.menu > p {
+  display: flex;
+  align-items: center;
+}
+
+.menu > p:hover {
+  color: #3778ad;
+  cursor: pointer;
+}
+
+.arrow {
+  display: flex;
+  width: 1rem;
+}
+
+.searchContainer {
+  width: 100%;
+}
+
+.searchSection {
+  background-color: rgba(0, 0, 0, 0.506);
+  background-image: url("https://etherscan.io/images/svg/waves-light.svg");
+  height: 15rem;
+  padding: 0 11.5rem;
+  padding-top: 3rem;
+}
+
+.searchSection > h3 {
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.02rem;
+}
+
+.input_section {
+  display: flex;
+  align-items: center;
+  width: 50.5rem;
+  height: 3rem;
+  border: 1px solid #191919;
+  border-radius: 0.3rem;
+  background-color: #111111;
+}
+
+.inputField {
+  width: 48rem;
+  color: #ffffff;
+  height: 2rem;
+  padding-left: 2rem;
+  border: none;
+  background-color: #111111;
+  font-size: 1rem;
+}
+
+.inputField::placeholder {
+  color: #bbbbbb;
+  font-size: 1rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  background-color: #3a82be;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.magnifying {
+  width: 1.1rem;
+}
+
+.searchResults {
+  background-color: #111111;
+  margin: 2rem 11.5rem;
+  border: 1px solid #222222;
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0 1.5rem #ffffff09;
+  padding: 1rem;
+}
+
+.searchResults > p {
+  letter-spacing: 0.02rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #191919;
+  margin-bottom: 1rem;
+}
+
+.blueText {
+  color: #7cb3d7;
+}
+
+.txnSection {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.txnTitle {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #191919;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.txnTitle > th {
+  width: 9rem;
+  text-align: center;
+}
+
+.txn {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #191919;
+}
+
+.txn > td {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9rem;
+  height: 3rem;
+  text-align: center;
+}
+
+.transfer {
+  font-size: 0.8rem;
+  background-color: #151515;
+  padding: 0.35rem 1.2rem;
+  border: 1px solid #2c2c2c;
+  border-radius: 0.3rem;
+}
+
+.inTxn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: #161f1d;
+  color: #479f87;
+  border: 1px solid #223f37;
+  border-radius: 0.3rem;
+}
+
+.outTxn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  background-color: #2d2615;
+  color: #96792a;
+  border: 1px solid #4c3f1e;
+  border-radius: 0.3rem;
+}
+
+.copyButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 0;
+}
+
+.copyIcon {
+  color: white;
+}
+
+.copiedText {
+  font-size: 12px;
+  color: green;
+  margin-left: 5px;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.paginationButton {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.paginationButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.paginationButton.activePage {
+  background-color: #007bff;
+  color: white;
+}
+
+.ellipsis {
+  margin: 0 5px;
+}
+
+
+
+
+.filterButton {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.rapidTrue {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.rapidFalse {
+  background-color: #f44336;
+  color: white;
+}
+
+
+.filterContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.filterIcon {
+  margin-right: 5px;
+}
+
+.filterSelect {
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.addressInput {
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.largeTransactionLabel {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.largeTransactionLabel input[type="checkbox"] {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+/* Optional: Style for when the checkbox is checked */
+.largeTransactionLabel input[type="checkbox"]:checked + span {
+  font-weight: bold;
+}
+
+/* Optional: Hover effect for better user experience */
+.largeTransactionLabel:hover {
+  color: #0056b3;
+}
+
+.largeTransactionInput {
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100px;
+}
+
+.largeTransactionInput:disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+}
+
+.sortableHeader {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  padding-right: 20px; /* Make room for the sort icon */
+}
+
+.sortableHeader::after {
+  content: '\2195'; /* Unicode for up/down arrow */
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.5;
+}
+
+.sortableHeader.asc::after {
+  content: '\2191'; /* Unicode for up arrow */
+  opacity: 1;
+}
+
+.sortableHeader.desc::after {
+  content: '\2193'; /* Unicode for down arrow */
+  opacity: 1;
+}

@@ -1,0 +1,16 @@
+.table {
+    width: 100%;
+    max-width: 1200px; /* Set a maximum width */
+    margin: 0 auto; /* Center the table */
+    border-collapse: collapse; /* Ensure borders are collapsed */
+  }
+  
+  .table th, .table td {
+    padding: 8px; /* Add padding for better readability */
+    border: 1px solid #ddd; /* Add border to cells */
+  }
+  
+  .table th {
+    background-color: #f2f2f2; /* Light background for headers */
+    text-align: left; /* Align text to the left */
+  }

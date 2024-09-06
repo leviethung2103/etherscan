@@ -1,0 +1,7 @@
+fastapi
+asyncio
+selenium
+webdriver_manager
+bson
+motor
+uvicorn
