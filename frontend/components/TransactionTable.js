@@ -26,7 +26,7 @@ const TransactionTable = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:8001/api/transactions');
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/transactions`);
         const result = await response.json();
         setData(result);
       } catch (error) {
